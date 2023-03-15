@@ -14,7 +14,6 @@
 #Note that the general best practice for passing arbitrary arguments to the callback is to use a lambda function. In this example, we used the callback wrapper for simplicity.
 
 
-
 import os
 
 from dotenv import load_dotenv
