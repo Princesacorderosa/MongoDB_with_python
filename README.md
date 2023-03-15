@@ -61,3 +61,13 @@ The documents used in this Unit are available in [Unit 2](https://github.com/Pri
   
   `delete_many()` to delete multiple documents in single operation. its syntax is:<pre>db.collection.delete_many(<filter)</pre> if query filter is empty, then all documents in collection will be deleted. 
   An example for this method: [delete_multiple.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/delete_multiple.py)
+  
+* ### Lesson 6: Creating MongoDB Transactions in Python Applications
+  A transaction - is a group of database operations that are completed together as a unit or not at all. Are used when a group of related operations must either all succeed or all fail together (property known as **Atomicity**)  
+  Steps to complete a transaction in a Python application, using PyMongo callback API:  
+  (create a database connection is a prerequisite)
+  1. Define callback function - that specifies the seq of operations to perform inside the transaction. In the callback, include the required parameter, which is the client session.
+  2. Start a client session, by calling the `start_session` method
+  3. Start the transaction by calling the `with_transaction()`method.  
+  
+ An example of transaction: [transaction.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/transaction.py) , is successful if in the console outputs "Transaction successful"
