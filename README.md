@@ -48,3 +48,16 @@ The documents used in this Unit are available in [Unit 2](https://github.com/Pri
   `find()` - return all documents that match a query
   example: if we want to find all accounts with balance greater than $4700 [find_multiple.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/find_multiple.py)
 
+* ### Lesson 4: Updating Documents in Python Applications
+  How to perform single and multiple documents updates, using PyMongo's methods:
+  `update_one()` - update a single document that matches specified criteria. its syntax is:<pre>db.collection.update_one(<filter , <update)</pre>To demonstrate update one [update_single.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/update_single.py)
+
+   `update_many()` - update multiple documents in single operation. its syntax is:<pre>db.collection.update_many(<filter , <update)</pre> [update_multiple.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/update_multiple.py)
+   
+* ### Lesson 5: Deleting Documents in Python Applications
+  Methods to delete documents in MongoDB can use:  
+  `delete_one()` to delete a single document. its syntax is:<pre>db.collection.delete_one(<filter)</pre> it accepts the query **filter** that matches the document we want to delete.  
+  An example for this method: [delete_single.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/delete_single.py)  
+  
+  `delete_many()` to delete multiple documents in single operation. its syntax is:<pre>db.collection.delete_many(<filter)</pre> if query filter is empty, then all documents in collection will be deleted. 
+  An example for this method: [delete_multiple.py](https://github.com/Princesacorderosa/MongoDB_with_python/blob/main/Unit%202%20-%20MongoDB%20CRUD%20Operations%20with%20Python/delete_multiple.py)
